@@ -1,0 +1,35 @@
+.form-control {
+  border: 1px solid $slate-light;
+  border-radius: $border-radius;
+  padding: $gutter-xsmall $gutter-small;
+  outline: none;
+  flex: 1;
+  transition: border-color 0.12s ease-in-out;
+
+  &:focus {
+    border-color: $slate-medium;
+  }
+}
+
+textarea.form-control {
+  min-height: 90px;
+  width: 100%;
+  resize: vertial;
+}
+
+.form-group {
+  display: flex;
+  margin-bottom: $gutter-small;
+
+  &.form-group--split {
+    input {
+      &:first-child {
+        margin-right: 10px;
+      }
+
+      &:last-child {
+        margin-left: 10px;
+      }
+    }
+  }
+}

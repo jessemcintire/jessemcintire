@@ -1,0 +1,79 @@
+@import "styleguide";
+
+@mixin base-btn {
+  border: 0;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  border-radius: $border-radius-large;
+  padding: $gutter-xsmall $gutter;
+  text-align: center;
+  text-decoration: none;
+  transition: all $ease-fast;
+}
+
+.btn {
+  @include base-btn();
+
+  [class*="icon-"] {
+    font-size: $font-size-medium;
+    margin-left: $gutter-xsmall;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+  }
+
+  &.btn--primary {
+    background: $primary-color;
+    color: $white;
+
+    &.btn--outline {
+      background: transparent;
+      border: 1px solid $aqua;
+      color: $aqua;
+
+      &:hover {
+        background: transparent;
+        border-color: $aqua-dark;
+        color: $aqua-dark;
+      }
+    }
+
+    &:hover {
+      background: $aqua-light;
+    }
+  }
+
+  &.btn--secondary {
+    background: $secondary-color;
+  }
+
+  &.btn--tertiary {
+    background: $tertiary-color;
+  }
+
+  &.btn--grayscale {
+    background: $slate-light;
+    color: $slate;
+
+    &:hover {
+      background: $slate-xlight;
+    }
+  }
+
+  &.btn-block {
+    display: block;
+    width: 100%;
+  }
+}
+
+.btn-link {
+  @include base-btn();
+  color: $aqua;
+
+  &:hover {
+    color: $aqua-dark;
+  }
+
+}

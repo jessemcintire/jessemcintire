@@ -1,0 +1,32 @@
+// ------------------------------------------------
+// Gutters
+// ------------------------------------------------
+// Use these for margin/padding between elements
+
+$gutter-base: 20px;
+
+$gutter-xxsmall: $gutter-base * .25;    // 5px
+$gutter-xsmall: $gutter-base * .5;      // 10px
+$gutter-small: $gutter-base * .75;      // 15px
+$gutter: $gutter-base;                  // 20px
+$gutter-medium: $gutter-base * 1.5;     // 30px
+$gutter-large: $gutter-base * 2;        // 40px
+$gutter-xlarge: $gutter-base * 2.5;     // 50px
+$gutter-xxlarge: $gutter-base * 3;      // 60px
+
+// ------------------------------------------------
+// Breakpoints
+// ------------------------------------------------
+
+$xsmall: 320px;
+
+$small: 480px;
+$small-max: max-width $small - 1;
+
+$medium: 768px;
+$medium-max: max-width $medium - 1;
+
+$large: 992px;
+$large-max: max-width $large - 1;
+
+$xlarge: 1200px;

@@ -1,0 +1,7 @@
+.hide-on-mobile {
+  display: none;
+
+  @include breakpoint($medium) {
+    display: inline-block;
+  }
+}

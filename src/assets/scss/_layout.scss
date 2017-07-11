@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: $font-size-base;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $slate-xlight;
+  background: $slate-xlight;
+}
+
+.main {
+  background: #efefef;
+}
+
+.main-content {
+  margin: 0 auto;
+  max-width: 1160px;
+  padding: 15px;
+}
+
+.contain {
+  margin: 0 auto;
+  max-width: 1160px;
+  padding: 0 $gutter;
+  width: 100%;
+}

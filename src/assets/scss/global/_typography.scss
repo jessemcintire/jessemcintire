@@ -1,0 +1,50 @@
+@import "styleguide";
+
+// a {
+//   &,
+//   &:visited {
+//     color: $aqua;
+//   }
+// }
+
+h3 {
+  margin: 0 0 $gutter-small;
+}
+
+h4 {
+  margin: 0 0 $gutter-xsmall;
+}
+
+p {
+  font-size: $font-size-normal;
+  margin: 0;
+
+  @include breakpoint($medium) {
+    font-size: 1.125rem;
+    line-height: 1.4rem;
+  }
+}
+
+.fine-print {
+  font-size: $font-size-small;
+}
+
+h1 {
+  font-size: $font-size-large;
+
+  @include breakpoint($medium) {
+    font-size: $font-size-xlarge
+  }
+}
+
+h2 {
+  font-size: $font-size-large;
+}
+
+h3 {
+  font-size: $font-size-medium;
+}
+
+h4 {
+  font-size: $font-size-normal;
+}

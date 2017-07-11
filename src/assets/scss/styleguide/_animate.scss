@@ -1,0 +1,49 @@
+// Easing
+$ease-fast: 0.12s cubic-bezier(0, 0.9, 0.8, 1);
+$ease: 0.8s cubic-bezier(0, 0.9, 0.8, 1);
+$ease-slow: 0.3s cubic-bezier(0, 0.9, 0.8, 1);
+
+// Keyframe animations
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes toggleContentIn {
+  0% {
+    max-height: 0;
+    opacity: 0;
+  }
+
+  100% {
+    max-height: 1000px;
+    opacity: 1;
+  }
+}
