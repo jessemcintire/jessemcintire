@@ -1,0 +1,18 @@
+.button {
+  border: 1px solid #3497D9;
+  border-radius: 6px;
+  margin-top: 41px;
+  min-height: 54px;
+  text-align: center;
+  width: 100%;
+
+  &:first-of-type {
+    ~ button {
+      font-size: 20px;
+    }
+  }
+
+  &:hover {
+    background: blue;
+  }
+}

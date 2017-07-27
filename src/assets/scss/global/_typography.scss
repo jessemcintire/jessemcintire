@@ -1,11 +1,9 @@
 @import "styleguide";
 
-// a {
-//   &,
-//   &:visited {
-//     color: $aqua;
-//   }
-// }
+html,
+body {
+  font-size: $font-size-base;
+}
 
 h3 {
   margin: 0 0 $gutter-small;
