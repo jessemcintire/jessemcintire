@@ -73,3 +73,30 @@ li {
     color: #3497d9;
   }
 }
+
+.main-title {
+  font-size: 115px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  letter-spacing: -2px;
+
+  @media all and (max-width: 768px){
+    font-size: $font-size-xxlarge;
+    margin-bottom: 5px;
+  }
+}
+
+.main-sub-title {
+  margin: 0;
+  padding: 0 5px;
+  font-size: 25px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: $font-weight-light;
+
+  @media all and (max-width: 768px){
+    font-size: $font-size-medium;
+    margin-bottom: 20px;
+  }
+}

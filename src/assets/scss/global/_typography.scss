@@ -5,22 +5,26 @@ body {
   font-size: $font-size-base;
 }
 
+h1 {
+  font-size: $font-size-large;
+}
+
 h2 {
+  font-size: $font-size-large;
+}
+
+h3 {
   color: var(--slate-dark);
-  font-size: $font-size-xlarge;
+  font-size: $font-size-large;
   font-weight: $font-weight-normal;
   margin: 0 0 $gutter-xsmall;
 }
 
-h3 {
+h4 {
   color: $slate-medium;
   margin: 0;
   padding: 0;
   font-size: $font-size-normal;
-}
-
-h4 {
-  margin: 0 0 $gutter-xsmall;
 }
 
 p {
@@ -35,24 +39,4 @@ p {
 
 .fine-print {
   font-size: $font-size-small;
-}
-
-h1 {
-  font-size: $font-size-large;
-
-  @include breakpoint($medium) {
-    font-size: $font-size-xlarge
-  }
-}
-
-h2 {
-  font-size: $font-size-large;
-}
-
-h3 {
-  font-size: $font-size-medium;
-}
-
-h4 {
-  font-size: $font-size-normal;
 }
